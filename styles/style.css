@@ -1,4 +1,4 @@
-/* RESET  */
+/* * * * * * * * * RESET * * * * * * * * */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ ul, ol {
     list-style: none;
 }
 
-/* VARIABLES */
+/* * * * * * * * * VARIABLES * * * * * * * * */
 :root {
     --color-primary: #be2529;
     --color-gray-dark: #333;
@@ -23,10 +23,9 @@ ul, ol {
     --color-gray-light: #ddd;
     --color-gray-extra-light: #eee;
     --color-secondary : #0d0d0d;
-
 }
 
-/* GENERAL */
+/* * * * * * * * * GENERAL * * * * * * * * */
 :root {
     font-size: 62.5%;
 }
@@ -39,6 +38,7 @@ html, body {
 .container {
     max-width: 1100px;
     margin: 0 auto;
+    height: 1500px;
 }
 
 .text-primary {
@@ -70,7 +70,7 @@ html, body {
     color: white;
 }
 
-/* HEADER */
+/* * * * * * * * * HEADER * * * * * * * * */
 .header {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -79,18 +79,35 @@ html, body {
 }
 
 .header a {
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
 }
 
 .logo {
     font-size: 3rem;
 }
 
-.navigation {
-
-}
-
 .nav-list {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item:nth-child(2) {
+    margin: 0 2rem;
+}
+
+/* * * * * * * * * NAVIGATION * * * * * * * * */
+.nav-secondary {
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+.nav-secondary > ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-secondary-item {
+    text-transform: uppercase;
 }
