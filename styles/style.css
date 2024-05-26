@@ -33,7 +33,7 @@ ol {
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 1.6rem;
 }
 
@@ -41,6 +41,7 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   height: 1500px;
+  padding: 0 1.5rem;
 }
 
 .text-primary {
@@ -72,10 +73,19 @@ body {
   color: white;
 }
 
+.btn-dark {
+    background-color: var(--color-gray-dark);
+    color: white;
+    transition: all 0.3s;
+}
+
+.btn-dark:hover {
+    background-color: var(--color-gray-hint);
+}
+
 .item-title {
-  font-weight: 400;
   font-size: 1.8rem;
-  padding: 1rem 0;
+  padding-top: 1rem;
 }
 
 .article-paragraph {
@@ -93,6 +103,22 @@ body {
   color: var(--color-gray-hint);
   font-size: 1.2rem;
   font-style: italic;
+}
+
+.text-date::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f005';
+    margin-left: 0.5rem;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid var(--color-gray-light);
+}
+
+::placeholder {
+    color: var(--color-gray-dark);
 }
 
 /* * * * * * * * * HEADER * * * * * * * * */
@@ -224,4 +250,43 @@ body {
 .item-img {
   max-width: 100%;
   object-fit: cover;
+}
+
+/* * * * * * * * * MEMBERSHIP * * * * * * * * */
+.membership {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: var(--color-gray-light);
+    margin: 2rem 0;
+}
+
+.membership > div {
+    margin: 0 auto;
+}
+
+.img-membership {
+    width: 200px;
+}
+
+.title-membership {
+    font-size: 4rem;
+}
+
+.paragaph-membership {
+    margin: 1rem 0;
+}
+
+.input-membership {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-gray-dark);
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    margin-right: 1rem;
+}
+
+.input-membership:focus {
+    outline: none;
 }
