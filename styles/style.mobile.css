@@ -47,8 +47,14 @@
     display: none;
 }
 
-.membership > div {
+.membership > section {
     padding: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+    .form-membership button {
+        margin-top: 1rem;
+    }
 }
 
 /* * * * * * * * * CONTENT * * * * * * * * */
