@@ -58,7 +58,6 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 1.6rem;
 }
 
 .btn-light {
@@ -163,6 +162,10 @@ hr {
 .nav-secondary > ul {
   display: flex;
   justify-content: space-between;
+}
+
+.nav-secondary > ul li {
+  margin: 0 1rem;
 }
 
 .nav-secondary-item {

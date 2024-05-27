@@ -1,0 +1,61 @@
+/* * * * * * * * * HEADER * * * * * * * * */
+.header {
+  grid-template-columns: 1fr;
+}
+
+.logo {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-item:nth-child(2) {
+    margin: 1rem;
+  }
+
+  .nav-item button {
+    display: none;
+  }
+}
+
+/* * * * * * * * * NAVIGATION * * * * * * * * */
+.nav-secondary > ul {
+  overflow: hidden;
+}
+
+/* * * * * * * * * SHOWCASE * * * * * * * * */
+.showcase {
+    grid:
+        "item1" auto
+        "item2" auto
+        "item3" auto
+        "item4" auto
+        "item5" auto 
+}
+
+/* * * * * * * * * MEMBERSHIP * * * * * * * * */
+.title-membership {
+    font-size: 2.5rem;
+  }
+
+.img-membership {
+    display: none;
+}
+
+.membership > div {
+    padding: 2rem;
+}
+
+/* * * * * * * * * CONTENT * * * * * * * * */
+.content {
+    flex-direction: column;
+}
+
+.aside-articles {
+    display: none;
+}
